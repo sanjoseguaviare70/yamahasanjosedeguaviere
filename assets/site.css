@@ -15,36 +15,3 @@
 .seo-intro p{color:#555;line-height:1.6}
 
 @media (max-width:768px){.seo-intro h1{font-size:1.5rem}}
-
-
-/* Motos destacadas en inicio */
-.featured-section { padding: 4rem 1rem; background-color: #f9f9f9; }
-.featured-container { max-width: 1200px; margin: 0 auto; }
-.featured-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-.featured-card { background: #fff; border: 1px solid #eaeaea; border-radius: 12px; padding: 1.5rem 1rem; text-align: center; transition: transform .3s, box-shadow .3s; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; color: inherit; }
-.featured-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-color: #e60000; }
-.featured-card img { height: 160px; width: 100%; object-fit: contain; margin-bottom: 1rem; }
-.featured-card h3 { font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: .5rem; color: #111; }
-.featured-card .price { color: #e60000; font-weight: 800; font-size: 1.2rem; margin-bottom: 1rem; }
-.featured-card .btn-ver { background: #111; color: #fff; padding: 10px 16px; border-radius: 6px; font-weight: 700; font-size: .85rem; transition: background .2s; }
-.featured-card:hover .btn-ver { background: #e60000; }
-
-/* SecciÃ³n SEO local */
-.local-seo-section { padding: 5rem 1rem; background: #fff; }
-.local-seo-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-.local-seo-text h2 { font-family: var(--font-heading); font-size: 2.2rem; margin-bottom: 1.5rem; color: #111; line-height: 1.2; }
-.local-seo-text h2 span { color: #e60000; }
-.local-seo-text p { color: #555; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.05rem; }
-.local-seo-features { list-style: none; padding: 0; margin: 0 0 2rem; }
-.local-seo-features li { padding: .75rem 0; display: flex; align-items: center; gap: .75rem; font-weight: 600; color: #222; border-bottom: 1px solid #f0f0f0; }
-.local-seo-features li::before { content: "âœ“"; color: #e60000; font-weight: 900; font-size: 1.2rem; }
-.local-seo-box { background: #111; color: #fff; padding: 2.5rem; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border-left: 6px solid #e60000; }
-.local-seo-box h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: #fff; }
-.local-seo-box p { color: #ccc; line-height: 1.7; margin-bottom: 1.5rem; }
-.local-seo-box a.btn-wa { display: inline-flex; align-items: center; gap: .5rem; background: #25d366; color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; }
-.local-seo-box a.btn-wa:hover { background: #1eb855; }
-
-@media (max-width: 768px) {
-  .local-seo-container { grid-template-columns: 1fr; gap: 2rem; }
-  .local-seo-text h2 { font-size: 1.75rem; }
-}
