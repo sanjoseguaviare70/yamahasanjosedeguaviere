@@ -1,52 +1,23 @@
-# Yamaha San José del Guaviare
+# Yamaha San Jose del Guaviare — Sitio Web Oficial
 
-Sitio web oficial de **Yamaha San José del Guaviare** (Yamaha San Jose del Guaviare), concesionario de motos Yamaha en San José del Guaviare, Guaviare, Colombia.
+Sitio web completo adaptado exclusivamente para **Yamaha San Jose del Guaviare** (`Cra. 22 # 8-43, San Jose del Guaviare, Colombia`), con posicionamiento SEO 100% aislado para la zona del Guaviare (sin mezclar datos ni posicionamientos de otras ciudades o departamentos).
 
-- **Dirección:** Cra. 22 #8-43, San José del Guaviare, Guaviare
-- **Teléfono / WhatsApp:** 300 316 2824
-- **Correo:** sanjoseyamaha@gmail.com
+## Secciones incluidas
 
-Es un sitio estático (HTML + CSS + JS). No necesita compilarse ni instalar nada.
-
-## Estructura
-
-| Ruta | Contenido |
-|---|---|
-| `index.html` | Página de inicio |
-| `motos.html` | Catálogo con filtros por categoría |
-| `fichas/` | Una ficha técnica por moto (colores, especificaciones, precio) |
-| `motos/` | Fotos de las motos por color |
-| `assets/` | Estilos, scripts, logos, íconos, videos e imágenes |
-| `sitemap.xml`, `robots.txt` | Archivos para Google y otros buscadores |
-| `404.html` | Página de error |
-| `cambiar-dominio.ps1` | Cambia la URL del sitio en todos los archivos |
-
-## Publicar en GitHub Pages
-
-1. Crea un repositorio **público** en GitHub, por ejemplo `yamaha-san-jose-del-guaviare`.
-2. Sube **todo el contenido** de esta carpeta a la raíz del repositorio (no la carpeta, sino lo que hay adentro).
-   - Recomendado: [GitHub Desktop](https://desktop.github.com/) → *Add local repository* → elige esta carpeta → *Publish repository*.
-   - La subida desde la web solo permite 100 archivos por vez, y este sitio tiene más de 300.
-3. En el repositorio: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)` → Save**.
-4. En 1 o 2 minutos el sitio queda en `https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/`.
-5. Pon esa URL en todos los archivos (canonical, sitemap, datos estructurados):
-   ```powershell
-   powershell -ExecutionPolicy Bypass -File .\cambiar-dominio.ps1 -NuevoDominio "https://TU-USUARIO.github.io/NOMBRE-DEL-REPO"
-   ```
-   Luego vuelve a subir los cambios (*Commit* + *Push* en GitHub Desktop).
-
-> Si compras un dominio propio (por ejemplo `yamahasanjosedelguaviare.com`), configúralo en **Settings → Pages → Custom domain** y ejecuta `cambiar-dominio.ps1` con ese dominio.
-
-## Posicionamiento en Google (SEO)
-
-El sitio ya trae:
-- Títulos y descripciones con "Yamaha San José del Guaviare" y "Yamaha San Jose del Guaviare" (con y sin tilde).
-- Datos estructurados Schema.org: `MotorcycleDealer` (dirección, horario, teléfono, coordenadas), `FAQPage`, `Product` (cada moto con precio en COP) y `BreadcrumbList`.
-- `sitemap.xml`, `robots.txt`, etiquetas de geolocalización (Guaviare), canonical y Open Graph.
-
-Para aparecer en los primeros resultados de Google, después de publicar:
-1. **Google Search Console** (https://search.google.com/search-console): agrega el sitio, verifícalo y envía `sitemap.xml`. Luego usa *Inspección de URLs → Solicitar indexación* para la página de inicio.
-2. **Perfil de Empresa de Google** (https://business.google.com): crea o reclama el negocio "Yamaha San José del Guaviare" con la misma dirección, teléfono y horario que aparecen en la web, y agrega el enlace del sitio. Es lo que más influye en las búsquedas locales y en Google Maps.
-3. **Bing Webmaster Tools** (https://www.bing.com/webmasters): importa el sitio desde Search Console.
-4. Pon el enlace de la web en Facebook, Instagram, WhatsApp Business y directorios locales.
-5. Pide a tus clientes reseñas en Google.
+1. **Hero con Video de Presentación Oficial**: Video de fondo en bucle (`motos/video fondo.mp4`) con llamados a la acción para cotizar o ver el catálogo.
+2. **Motocicletas Destacadas**: NMAX, XTZ 125 y MT09 con selector de color en tiempo real y acceso directo a ficha técnica.
+3. **Catálogo de 35 Motocicletas + Fichas Técnicas Completas**:
+   - Las 9 categorías oficiales de Yamaha Colombia (*Adventure, Automáticas y Semiautomáticas, Cuatrimotos y Side-by-Side, Deportivas, Motocross y Enduro, Sport Heritage, Super Deportivas, Todo Terreno, Urbanas y Trabajo*).
+   - Modal de **Ficha Técnica Completa** con banner oficial, **cintilla negra movible de tecnologías** (TCS, Blue Core, Euro 3, Euro 5, Freno de disco, Smart Key, Thermo Tech, ABS, Y-Connect) y tablas detalladas de Motor, Chasis y Dimensiones.
+   - **Comparador de Motocicletas** interactivo para comparar hasta 3 fichas técnicas lado a lado.
+4. **Nuestros Servicios + Simulador de Crédito**:
+   - Venta de motocicletas nuevas con matrícula en San Jose del Guaviare.
+   - Servicio Técnico Autorizado con **Modal de Agendamiento de Cita de Taller**.
+   - Repuestos originales y lubricantes **Yamalube** con **Modal de Cotización de Repuestos**.
+   - Financiación con **Simulador de Crédito Interactivo** en tiempo real.
+5. **Recomendaciones**: Cuidado preventivo con Yamalube, despegue de motor, chequeo diario y seguridad vial en el Guaviare.
+6. **Últimas Entradas (Blog)**: Artículos sobre tecnología *Blue Core & Y-Connect*, cuidado en el clima tropical y vías de San Jose del Guaviare, y comparativa de la familia *XTZ*.
+7. **Preguntas Frecuentes (FAQ)**: Acordeón interactivo sobre requisitos de crédito, tiempos de entrega y matrícula en San Jose del Guaviare, garantía, taller y repuestos.
+8. **¿Necesitas Ayuda?**: Tarjetas de contacto directo por área (Ventas, Taller, Repuestos, PQRS) y formulario de solicitud de asesoría inmediata.
+9. **Ficha de Ubicación Oficial en San Jose del Guaviare, Guaviare**:
+   - **Sede Principal Yamaha San Jose del Guaviare (`Cra. 22 # 8-43, San Jose del Guaviare, Colombia`)** con mapa de Google Maps integrado, horarios, teléfonos por departamento, botón de *Cómo llegar* y bloque semántico de cobertura exclusiva en el departamento del Guaviare (San Jose del Guaviare, El Retorno, Calamar, Miraflores, El Capricho, Charras y Boquerón).

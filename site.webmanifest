@@ -1,1 +1,53 @@
-{"name":"Yamaha San José del Guaviare","short_name":"Yamaha Guaviare","start_url":"./index.html","display":"standalone","background_color":"#111111","theme_color":"#e60000","lang":"es-CO","icons":[{"src":"assets/favicon.png","sizes":"328x328","type":"image/png"}]}
+{
+  "id": "/",
+  "name": "Yamaha San Jose del Guaviare | Concesionario Oficial en el Guaviare",
+  "short_name": "Yamaha Guaviare",
+  "description": "Concesionario Oficial Yamaha San Jose del Guaviare en Cra. 22 # 8-43, San Jose del Guaviare, Colombia. Venta de las 35 motocicletas nuevas Yamaha, fichas técnicas, simulador de crédito, repuestos genuinos Yamalube y taller autorizado.",
+  "lang": "es-CO",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0B0F19",
+  "theme_color": "#E60012",
+  "categories": ["automotive", "shopping", "business"],
+  "icons": [
+    {
+      "src": "motos/yamaha-guaviare-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "motos/yamaha-guaviare-logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "motos/yamaha-guaviare-logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Catálogo de 35 Motos Yamaha",
+      "short_name": "Catálogo",
+      "description": "Ver precios y fichas técnicas en San Jose del Guaviare",
+      "url": "./index.html#catalogo-motos"
+    },
+    {
+      "name": "Simulador de Crédito",
+      "short_name": "Crédito",
+      "description": "Calcular cuotas de financiación Yamaha en el Guaviare",
+      "url": "./index.html#simulador-credito"
+    },
+    {
+      "name": "Ubicación Cra. 22 # 8-43",
+      "short_name": "Ubicación",
+      "description": "Cómo llegar a Yamaha San Jose del Guaviare",
+      "url": "./index.html#ficha-ubicacion"
+    }
+  ]
+}

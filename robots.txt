@@ -1,36 +1,75 @@
-# Robots.txt - Yamaha San José del Guaviare
-# Dominio: https://yamahasanjosedeguaviare.com.co/
+# =====================================================================
+# robots.txt — Yamaha San Jose del Guaviare
+# Concesionario Oficial Yamaha en San Jose del Guaviare, Guaviare, Colombia
+# Dirección: Cra. 22 # 8-43, San Jose del Guaviare, Colombia
+# Cumple 100% con el Estándar de Exclusión de Robots (RFC 9309) y las
+# Políticas de Búsqueda de Google (Google Search Essentials) para
+# renderizado completo WRS (Web Rendering Service / Google Chrome).
+# =====================================================================
 
+# 1. Regla general para todos los rastreadores web legítimos
 User-agent: *
 Allow: /
-Allow: /assets/
+Allow: /index.html
+Allow: /css/
+Allow: /js/
 Allow: /motos/
-Allow: /fichas/
+Allow: /site.webmanifest
+Allow: /sitemap.xml
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
 
-# Google Search Crawler
+# 2. Rastreador principal de Google (Renderizado con motor Google Chrome / Blink)
+# Se permite el acceso total a CSS y JS para que Google Chrome WRS evalúe
+# correctamente Core Web Vitals, diseño móvil y fichas técnicas dinámicas.
 User-agent: Googlebot
 Allow: /
-Allow: /assets/
+Allow: /css/
+Allow: /js/
 Allow: /motos/
-Allow: /fichas/
 
-# Google Images Crawler (Indexación de fotos de motos Yamaha)
-User-agent: Googlebot-Image
-Allow: /motos/
-Allow: /assets/
-Allow: /
-
-# Google Mobile Crawler
+# 3. Rastreador Smartphone de Google (Mobile-First Indexing en Android / iOS)
 User-agent: Googlebot-Mobile
 Allow: /
 
-# Bing Crawler
+# 4. Rastreador de Imágenes de Google (Indexación de las 35 motos y fichas técnicas)
+User-agent: Googlebot-Image
+Allow: /motos/
+Allow: /
+
+# 5. Rastreador de Video de Google (Indexación del video Hero de presentación)
+User-agent: Googlebot-Video
+Allow: /motos/
+Allow: /
+
+# 6. Revisores de Calidad de Anuncios y Landing Pages en Google Chrome
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# 7. Otros motores de búsqueda y previsualizadores sociales (WhatsApp, Facebook, Bing)
 User-agent: Bingbot
 Allow: /
 
-# Host Canónico
-Host: https://yamahasanjosedeguaviare.com.co
+User-agent: DuckDuckBot
+Allow: /
 
-# Sitemaps oficiales
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# =====================================================================
+# Ubicación Oficial del Sitemap XML (Protocolo sitemaps.org 0.9 + Google Image/Video)
+# =====================================================================
 Sitemap: https://yamahasanjosedeguaviare.com.co/sitemap.xml
-Sitemap: https://yamahasanjosedeguaviare.com.co/sitemap.txt

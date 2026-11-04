@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="redCircleGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FF2A3B"/>
+      <stop offset="65%" stop-color="#E60012"/>
+      <stop offset="100%" stop-color="#99000B"/>
+    </radialGradient>
+    <linearGradient id="forkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B78"/>
+      <stop offset="50%" stop-color="#D80010"/>
+      <stop offset="100%" stop-color="#7A0008"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo circular oscuro exterior -->
+  <circle cx="256" cy="256" r="250" fill="#0B0F19"/>
+  <!-- Anillo exterior rojo -->
+  <circle cx="256" cy="256" r="236" fill="url(#redCircleGrad)" stroke="#FF4D5A" stroke-width="6"/>
+  <!-- Anillo interior con relieve -->
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#800008" stroke-width="10" opacity="0.65"/>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#FF6B78" stroke-width="3" opacity="0.5"/>
+
+  <!-- Diapasones estilizados de fondo -->
+  <g stroke="url(#forkGrad)" stroke-width="18" stroke-linecap="round" opacity="0.88">
+    <!-- Eje vertical -->
+    <line x1="256" y1="54" x2="256" y2="410"/>
+    <line x1="236" y1="160" x2="236" y2="395"/>
+    <line x1="276" y1="160" x2="276" y2="395"/>
+    <!-- Diagonal 1 -->
+    <line x1="92" y1="352" x2="396" y2="174"/>
+    <!-- Diagonal 2 -->
+    <line x1="420" y1="352" x2="116" y2="174"/>
+  </g>
+
+  <!-- Texto Principal: YAMAHA GUAVIARE -->
+  <g filter="url(#dropShadow)">
+    <text x="256" y="246" text-anchor="middle" fill="#FFFFFF" font-family="'Montserrat', 'Oswald', 'Arial Black', sans-serif" font-weight="900" font-size="48" letter-spacing="1.5">
+      YAMAHA
+    </text>
+    <text x="256" y="294" text-anchor="middle" fill="#FFE4E6" font-family="'Georgia', serif" font-style="italic" font-weight="700" font-size="25" letter-spacing="1.5">
+      San Jose del Guaviare
+    </text>
+  </g>
+</svg>
